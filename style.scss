@@ -15,13 +15,121 @@ $defaultGlow: 0 0 5px white;
 $selectedGlow: 0 0 10px pink;
 
 
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+@include media-breakpoint-down(xl) { 
+    .logo{
+        width: 25vw !important;
+    }
+
+    .p-1{
+        font-size: 4vh !important;
+    }
+
+    .subtext{
+        font-size: 2vw !important;
+    }
+
+    .btn{
+        font-size: 20px !important;
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .col{
+        flex: 0 0 100% !important;
+    }
+
+    .logo{
+        width: 30vw !important;
+    }
+
+    .p-1{
+        font-size: 4vh !important;
+    }
+
+    .subtext{
+        font-size: 2vw !important;
+    }
+
+    .btn{
+        font-size: 20px !important;
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .container{
+        background-color: $BG-Primary !important;
+        box-shadow: none !important;
+        border: 0 !important;
+    }
+
+    .col{
+        flex: 0 0 100% !important;
+    }
+
+    .logo{
+        width: 50vw !important;
+    }
+
+    .p-1{
+        font-size: 4vh !important;
+    }
+
+    .subtext{
+        font-size: 3vw !important;
+    }
+
+    .btn{
+        font-size: 15px !important;
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .container{
+        background-color: $BG-Primary !important;
+        box-shadow: none !important;
+        border: 0 !important;
+    }
+
+    .col{
+        flex: 0 0 100% !important;
+    }
+
+    .logo{
+        width: 70vw !important;
+    }
+
+    .p-1{
+        font-size: 4vh !important;
+    }
+
+    .subtext{
+        font-size: 3.5vw !important;
+    }
+
+    .btn{
+        font-size: 15px !important;
+    }
+}
+
 body{
     background-color: $BG-Primary;
 }
 
 .container{
-    padding: 20px;
-    margin-top: 200px;
+    padding: 1em;
+    margin-top: 10vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
     box-shadow: $PrimShadow;
     border: $darkOutLine;
     background-color: $BG-Secondary;
@@ -33,7 +141,7 @@ body{
 }
 
 .logo{
-    width: 50%;
+    width: 20em;
     box-shadow: $PrimShadow;
 }
 
